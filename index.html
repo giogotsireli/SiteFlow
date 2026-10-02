@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="SiteFlow – Professional website creation starting at 500 GEL. We craft clean, modern websites for your business." />
+  <title>SiteFlow – Professional Website Creation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">
+        <span class="loader__letter" style="--i:0">S</span>
+        <span class="loader__letter" style="--i:1">i</span>
+        <span class="loader__letter" style="--i:2">t</span>
+        <span class="loader__letter" style="--i:3">e</span>
+        <span class="loader__letter" style="--i:4">F</span>
+        <span class="loader__letter" style="--i:5">l</span>
+        <span class="loader__letter" style="--i:6">o</span>
+        <span class="loader__letter" style="--i:7">w</span>
+      </div>
+      <div class="loader__bar-wrapper">
+        <div class="loader__bar"></div>
+      </div>
+      <p class="loader__tagline" id="loader-tagline">Loading experience...</p>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="nav" id="navbar">
+    <a href="#hero" class="nav__logo">SiteFlow</a>
+    <div class="nav__right">
+      <a href="#services" class="nav__link" data-en="Services" data-ka="სერვისები">Services</a>
+      <a href="#process" class="nav__link" data-en="Process" data-ka="პროცესი">Process</a>
+      <a href="#portfolio" class="nav__link" data-en="Work" data-ka="პორტფოლიო">Work</a>
+      <a href="#contact" class="nav__link" data-en="Contact" data-ka="კონტაქტი">Contact</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-toggle__en" id="langEn">ENG</span>
+        <span class="lang-toggle__divider">/</span>
+        <span class="lang-toggle__ka" id="langKa">GEO</span>
+      </button>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" class="mobile-menu__link" data-en="Services" data-ka="სერვისები">Services</a>
+    <a href="#process" class="mobile-menu__link" data-en="Process" data-ka="პროცესი">Process</a>
+    <a href="#portfolio" class="mobile-menu__link" data-en="Work" data-ka="პორტფოლიო">Work</a>
+    <a href="#contact" class="mobile-menu__link" data-en="Contact" data-ka="კონტაქტი">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__noise"></div>
+    <div class="hero__grid-lines"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        <span data-en="Available for new projects" data-ka="ვიღებთ ახალ პროექტებს">Available for new projects</span>
+      </div>
+
+      <h1 class="hero__title reveal reveal--delay-1">
+        <span class="hero__title-line" data-en="We Build" data-ka="ვქმნით">We Build</span>
+        <span class="hero__title-line hero__title-line--outline" data-en="Websites" data-ka="ვებსაიტებს">Websites</span>
+        <span class="hero__title-line" data-en="That Convert." data-ka="რომლებიც მუშაობს.">That Convert.</span>
+      </h1>
+
+      <p class="hero__sub reveal reveal--delay-2"
+        data-en="Clean, modern websites for Georgian businesses — starting at just 500 &#8382;."
+        data-ka="სუფთა, თანამედროვე ვებსაიტები ქართული ბიზნესებისთვის — დაწყებული მხოლოდ 500 &#8382;-დან.">
+        Clean, modern websites for Georgian businesses — starting at just 500 &#8382;.
+      </p>
+
+      <div class="hero__actions reveal reveal--delay-3">
+        <a href="#contact" class="btn btn--primary" id="heroCtaBtn">
+          <span data-en="Start Your Project" data-ka="დაიწყე პროექტი">Start Your Project</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#portfolio" class="btn btn--ghost">
+          <span data-en="View Our Work" data-ka="ნამუშევრები">View Our Work</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+      <span data-en="Scroll" data-ka="გადაახვიე">Scroll</span>
+    </div>
+
+    <div class="hero__float hero__float--1">
+      <div class="float-card">
+        <div class="float-card__icon">&#9889;</div>
+        <div>
+          <div class="float-card__num">72h</div>
+          <div class="float-card__label" data-en="Delivery" data-ka="მიწოდება">Delivery</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__float hero__float--2">
+      <div class="float-card">
+        <div class="float-card__icon">&#10022;</div>
+        <div>
+          <div class="float-card__num">500&#8382;</div>
+          <div class="float-card__label" data-en="Starting at" data-ka="დაწყებული">Starting at</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>SiteFlow</span><span>&#10022;</span>
+      <span data-en="Web Design" data-ka="ვებ დიზაინი">Web Design</span><span>&#10022;</span>
+      <span>500 &#8382;</span><span>&#10022;</span>
+      <span data-en="Fast Delivery" data-ka="სწრაფი მიწოდება">Fast Delivery</span><span>&#10022;</span>
+      <span data-en="Georgian Business" data-ka="ქართული ბიზნესი">Georgian Business</span><span>&#10022;</span>
+      <span>SiteFlow</span><span>&#10022;</span>
+      <span data-en="Web Design" data-ka="ვებ დიზაინი">Web Design</span><span>&#10022;</span>
+      <span>500 &#8382;</span><span>&#10022;</span>
+      <span data-en="Fast Delivery" data-ka="სწრაფი მიწოდება">Fast Delivery</span><span>&#10022;</span>
+      <span data-en="Georgian Business" data-ka="ქართული ბიზნესი">Georgian Business</span><span>&#10022;</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow reveal" data-en="What We Offer" data-ka="რას ვთავაზობთ">What We Offer</p>
+        <h2 class="section__title reveal reveal--delay-1" data-en="Everything Your Business Needs Online"
+          data-ka="ყველაფერი, რაც თქვენს ბიზნესს სჭირდება">Everything Your Business Needs Online</h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card reveal" style="--delay: 0s">
+          <div class="service-card__number">01</div>
+          <div class="service-card__icon">&#9676;</div>
+          <h3 class="service-card__title" data-en="Landing Pages" data-ka="სადესანტო გვერდები">Landing Pages</h3>
+          <p class="service-card__desc" data-en="High-converting single pages that turn visitors into customers."
+            data-ka="მაღალი კონვერსიის გვერდები, რომლებიც ვიზიტორებს მომხმარებლებად აქცევს.">High-converting single
+            pages that turn visitors into customers.</p>
+          <div class="service-card__price">from 500 &#8382;</div>
+        </div>
+        <div class="service-card reveal" style="--delay: 0.1s">
+          <div class="service-card__number">02</div>
+          <div class="service-card__icon">&#9673;</div>
+          <h3 class="service-card__title" data-en="Business Websites" data-ka="ბიზნეს ვებსაიტები">Business Websites</h3>
+          <p class="service-card__desc" data-en="Multi-page websites with all the sections your brand needs to shine."
+            data-ka="მრავალგვერდიანი ვებსაიტები ყველა სექციით, რაც თქვენს ბრენდს სჭირდება.">Multi-page websites with all
+            the sections your brand needs to shine.</p>
+          <div class="service-card__price">from 800 &#8382;</div>
+        </div>
+        <div class="service-card reveal" style="--delay: 0.2s">
+          <div class="service-card__number">03</div>
+          <div class="service-card__icon">&#9678;</div>
+          <h3 class="service-card__title" data-en="Portfolio Sites" data-ka="პორტფოლიო საიტები">Portfolio Sites</h3>
+          <p class="service-card__desc" data-en="Showcase your creative work with an elegant, memorable presence."
+            data-ka="წარმოაჩინეთ თქვენი ნამუშევრები ელეგანტური, დასამახსოვრებელი გვერდით.">Showcase your creative work
+            with an elegant, memorable presence.</p>
+          <div class="service-card__price">from 500 &#8382;</div>
+        </div>
+        <div class="service-card reveal" style="--delay: 0.3s">
+          <div class="service-card__number">04</div>
+          <div class="service-card__icon">&#11041;</div>
+          <h3 class="service-card__title" data-en="Redesign" data-ka="რედიზაინი">Redesign</h3>
+          <p class="service-card__desc" data-en="Transform your outdated website into a modern, high-performing asset."
+            data-ka="გარდაქმენით თქვენი მოძველებული ვებსაიტი თანამედროვე, ეფექტიან ხელსაწყოდ.">Transform your outdated
+            website into a modern, high-performing asset.</p>
+          <div class="service-card__price">from 600 &#8382;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow reveal" data-en="How It Works" data-ka="როგორ მუშაობს">How It Works</p>
+        <h2 class="section__title reveal reveal--delay-1" data-en="Simple. Fast. Effective."
+          data-ka="მარტივი. სწრაფი. ეფექტური.">Simple. Fast. Effective.</h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step reveal" style="--delay: 0s">
+          <div class="process__step-num">01</div>
+          <div class="process__step-content">
+            <h3 data-en="Discovery Call" data-ka="პირველი შეხვედრა">Discovery Call</h3>
+            <p data-en="We discuss your goals, target audience and vision."
+              data-ka="ვსაუბრობთ თქვენს მიზნებზე, სამიზნე აუდიტორიასა და ხედვაზე.">We discuss your goals, target
+              audience and vision.</p>
+          </div>
+        </div>
+        <div class="process__connector reveal" style="--delay:0.07s"></div>
+        <div class="process__step reveal" style="--delay: 0.15s">
+          <div class="process__step-num">02</div>
+          <div class="process__step-content">
+            <h3 data-en="Design and Build" data-ka="დიზაინი და შექმნა">Design and Build</h3>
+            <p data-en="We craft every pixel with precision and modern standards."
+              data-ka="ყოველ პიქსელს ვქმნით სიზუსტითა და თანამედროვე სტანდარტებით.">We craft every pixel with precision
+              and modern standards.</p>
+          </div>
+        </div>
+        <div class="process__connector reveal" style="--delay:0.22s"></div>
+        <div class="process__step reveal" style="--delay: 0.3s">
+          <div class="process__step-num">03</div>
+          <div class="process__step-content">
+            <h3 data-en="Launch" data-ka="გაშვება">Launch</h3>
+            <p data-en="Your site goes live — optimized, responsive and ready to grow."
+              data-ka="თქვენი საიტი გაშვებულია — ოპტიმიზებული, რეზაპონსული და ზრდისთვის მზა.">Your site goes live —
+              optimized, responsive and ready to grow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow reveal" data-en="Our Work" data-ka="ჩვენი ნამუშევრები">Our Work</p>
+        <h2 class="section__title reveal reveal--delay-1" data-en="Built With Purpose" data-ka="შექმნილი მიზნით">Built
+          With Purpose</h2>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio__item reveal" style="--delay: 0s">
+          <div class="portfolio__thumb">
+            <div class="portfolio__placeholder">
+              <div class="portfolio__ph-shapes">
+                <div class="ph-shape ph-shape--1"></div>
+                <div class="ph-shape ph-shape--2"></div>
+                <div class="ph-shape ph-shape--3"></div>
+              </div>
+              <span class="portfolio__placeholder-title">Restaurant X</span>
+              <span class="portfolio__placeholder-sub" data-en="Food and Beverage" data-ka="კვება და სასმელი">Food and
+                Beverage</span>
+            </div>
+            <div class="portfolio__overlay">
+              <span data-en="Landing Page" data-ka="სადესანტო გვერდი">Landing Page</span>
+            </div>
+          </div>
+          <div class="portfolio__meta">
+            <span class="portfolio__tag" data-en="Landing Page" data-ka="სადესანტო გვერდი">Landing Page</span>
+            <span class="portfolio__tag">500 &#8382;</span>
+          </div>
+        </div>
+        <div class="portfolio__item reveal" style="--delay: 0.1s">
+          <div class="portfolio__thumb">
+            <div class="portfolio__placeholder">
+              <div class="portfolio__ph-shapes">
+                <div class="ph-shape ph-shape--4"></div>
+                <div class="ph-shape ph-shape--5"></div>
+              </div>
+              <span class="portfolio__placeholder-title">LawFirm Pro</span>
+              <span class="portfolio__placeholder-sub" data-en="Legal Services" data-ka="იურიდიული სერვისები">Legal
+                Services</span>
+            </div>
+            <div class="portfolio__overlay">
+              <span data-en="Business Site" data-ka="ბიზნეს საიტი">Business Site</span>
+            </div>
+          </div>
+          <div class="portfolio__meta">
+            <span class="portfolio__tag" data-en="Business Site" data-ka="ბიზნეს საიტი">Business Site</span>
+            <span class="portfolio__tag">800 &#8382;</span>
+          </div>
+        </div>
+        <div class="portfolio__item reveal" style="--delay: 0.2s">
+          <div class="portfolio__thumb">
+            <div class="portfolio__placeholder">
+              <div class="portfolio__ph-shapes">
+                <div class="ph-shape ph-shape--6"></div>
+                <div class="ph-shape ph-shape--1"></div>
+                <div class="ph-shape ph-shape--3"></div>
+              </div>
+              <span class="portfolio__placeholder-title">Studio Tbilisi</span>
+              <span class="portfolio__placeholder-sub" data-en="Creative Agency" data-ka="კრეატიული სააგენტო">Creative
+                Agency</span>
+            </div>
+            <div class="portfolio__overlay">
+              <span data-en="Portfolio" data-ka="პორტფოლიო">Portfolio</span>
+            </div>
+          </div>
+          <div class="portfolio__meta">
+            <span class="portfolio__tag" data-en="Portfolio" data-ka="პორტფოლიო">Portfolio</span>
+            <span class="portfolio__tag">500 &#8382;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat reveal">
+          <div class="stat__num" data-target="50">0</div>
+          <div class="stat__plus">+</div>
+          <div class="stat__label" data-en="Sites Delivered" data-ka="მიწოდებული საიტი">Sites Delivered</div>
+        </div>
+        <div class="stat reveal" style="--delay:0.1s">
+          <div class="stat__num" data-target="100">0</div>
+          <div class="stat__plus">%</div>
+          <div class="stat__label" data-en="Client Satisfaction" data-ka="კლიენტის კმაყოფილება">Client Satisfaction
+          </div>
+        </div>
+        <div class="stat reveal" style="--delay:0.2s">
+          <div class="stat__num" data-target="72">0</div>
+          <div class="stat__plus">h</div>
+          <div class="stat__label" data-en="Avg. Turnaround" data-ka="საშ. შესრულების დრო">Avg. Turnaround</div>
+        </div>
+        <div class="stat reveal" style="--delay:0.3s">
+          <div class="stat__num" data-target="500">0</div>
+          <div class="stat__plus">&#8382;</div>
+          <div class="stat__label" data-en="Starting Price" data-ka="საწყისი ფასი">Starting Price</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact__noise"></div>
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__left">
+          <p class="section__eyebrow reveal" data-en="Get In Touch" data-ka="დაგვიკავშირდით">Get In Touch</p>
+          <h2 class="contact__title reveal reveal--delay-1">
+            <span data-en="Ready to Start?" data-ka="მზად ხართ დასაწყებად?">Ready to Start?</span>
+          </h2>
+          <p class="contact__desc reveal reveal--delay-2"
+            data-en="Reach out and let's build something great together. Your first consultation is completely free."
+            data-ka="დაგვიკავშირდით და ერთად შევქმნათ რაღაც დიდი. პირველი კონსულტაცია სრულიად უფასოა.">
+            Reach out and let's build something great together. Your first consultation is completely free.
+          </p>
+          <div class="contact__details reveal reveal--delay-3">
+            <a href="tel:+995555844488" class="contact__phone">
+              <div class="contact__phone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5 19.79 19.79 0 01.25 4.07 2 2 0 012.24 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.29 6.29l1.17-1.17a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact__phone-label" data-en="Call Us" data-ka="დაგვირეკეთ">Call Us</div>
+                <div class="contact__phone-num">+995 555 84 44 88</div>
+              </div>
+            </a>
+            <div class="contact__info-row">
+              <div class="contact__info-item">
+                <span class="contact__info-icon">&#9678;</span>
+                <span data-en="Tbilisi, Georgia" data-ka="თბილისი, საქართველო">Tbilisi, Georgia</span>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-icon">&#9676;</span>
+                <span data-en="Mon-Sat, 10:00-20:00" data-ka="ორშ-შაბ, 10:00-20:00">Mon-Sat, 10:00-20:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__right reveal reveal--delay-2">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name" data-en="Your Name" data-ka="თქვენი სახელი">Your Name</label>
+              <input class="form-input" type="text" id="name" name="name" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email" data-en="Your Email" data-ka="თქვენი ელ. ფოსტა">Your Email</label>
+              <input class="form-input" type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone" data-en="Phone Number" data-ka="ტელეფონის ნომერი">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message" data-en="Tell Us About Your Project"
+                data-ka="მოგვიყევით თქვენი პროექტის შესახებ">Tell Us About Your Project</label>
+              <textarea class="form-input form-textarea" id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span data-en="Send Message" data-ka="შეტყობინების გაგზავნა">Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+            <p class="form-note" data-en="We'll get back to you within 24 hours."
+              data-ka="დაგიკავშირდებით 24 საათის განმავლობაში.">We'll get back to you within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">SiteFlow</div>
+        <p class="footer__copy" data-en="2024 SiteFlow. All rights reserved."
+          data-ka="2024 SiteFlow. ყველა უფლება დაცულია.">2024 SiteFlow. All rights reserved.</p>
+        <a href="#hero" class="footer__back-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
